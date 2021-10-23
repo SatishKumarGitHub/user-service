@@ -1,0 +1,21 @@
+spring:
+  application:
+    name: user-service
+  datasource:
+    url: jdbc:mysql://localhost:3306/user-service
+    username: root
+    password: root
+    name:
+  jpa:
+    #database: user-service
+    show-sql: true
+    hibernate:
+      ddl-auto: create
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.MySQL8Dialect
+        format-sql: true
+
+app:
+  jwt:
+    secrete: $2a$12$8CnRjf.8F9jQjeeqQIL3rOkVYX2KGzE6c62CHoLkcgdBBumvUF8Yy
